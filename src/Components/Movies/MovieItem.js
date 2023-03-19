@@ -12,7 +12,12 @@ export const MovieItem = ({ title, releaseDate, posterUrl, id }) => {
   return (
     <Card  width={"200"} height={320} borderRadius="5" margin={4}
       sx={{
-       ":hover": { boxShadow: "10px 10px 20px green" },
+        width: 250,
+        height: 320,
+        borderRadius: 5,
+        margin: 2,
+
+        ":hover": { boxShadow: "10px 10px 20px green" },
       }}
     >
       <img height={"50%"} width="100%"  src={posterUrl} alt={title} />
