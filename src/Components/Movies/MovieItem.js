@@ -10,17 +10,12 @@ import { Link } from "react-router-dom";
 
 export const MovieItem = ({ title, releaseDate, posterUrl, id }) => {
   return (
-    <Card
+    <Card  width={"200"} height={320} borderRadius="5" margin={4}
       sx={{
-        width: 250,
-        height: 320,
-        borderRadius: 5,
-        margin: 2,
-
-        ":hover": { boxShadow: "10px 10px 20px green" },
+       ":hover": { boxShadow: "10px 10px 20px green" },
       }}
     >
-      <img height={"50%"} width="100%" src={posterUrl} alt={title} />
+      <img height={"50%"} width="100%"  src={posterUrl} alt={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
@@ -36,6 +31,8 @@ export const MovieItem = ({ title, releaseDate, posterUrl, id }) => {
           color="inherit"
           sx={{ margin: "auto", color: "blue" }}
           size="small"
+          variant="contained"
+          indicatorcolor="secondary"
         >
           Book now
         </Button>
