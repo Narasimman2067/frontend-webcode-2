@@ -19,7 +19,7 @@ const getData =(data)=>{
 console.log(data);
 sendUserAuthRequest(data.inputs,data.signup)
 .then(onResReceived)
-.catch((err)=>console.log(err))
+.catch((err)=>console.log(err)
 };
 
 
