@@ -121,7 +121,9 @@ headers:{
 if (res.status !==201) {
   return console.log("unexpected error");
 
-}const resData = await res.data;
+}
+
+const resData = await res.data;
 return resData;
 }
 
